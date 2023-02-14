@@ -11,7 +11,7 @@ class Formatter {
       if(index !== 0 && small_words.includes(word))
         return word.toLowerCase();
       else
-        return word[0].toUpperCase() + word.slice(1).toLowerCase();
+        return this.capitalize(word);
     }).join(' ');
   }
 }
